@@ -4,7 +4,8 @@ import spock.lang.Specification
 
 
 class IntegerConverterSpec extends Specification {
-    IntegerCoverter integerCoverter = new IntegerCoverter();
+    IntegerToRoman integerCoverter = new IntegerToRoman();
+    RomanToInt romanToInt= new RomanToInt();
 
     def "should throw exception"() {
         given:
@@ -25,6 +26,16 @@ class IntegerConverterSpec extends Specification {
         10|"X"
         100|"C"
 
+    }
+    def "should return integer literals" (String a, int b){
+
+        expect:
+        romanToInt.romanToInt(a)==b
+        where:
+        a|b
+        "I"|1
+        "X"|10
+        "XIV"|14
     }
 
 }

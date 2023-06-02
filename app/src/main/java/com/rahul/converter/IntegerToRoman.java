@@ -1,6 +1,6 @@
 package com.rahul.converter;
 
-public class IntegerCoverter {
+public class IntegerToRoman {
     private String[] unit={"","I","II","III","IV","V","VI","VII","VIII","IX"};
     private String[] tens={"", "X","XX","XXX","XL","L","LX","LXX","LXXX","XC"};
     private String[] hundreds={"","C","CC","CCC","CD","D","DC","DCC","DCCC","CM"};

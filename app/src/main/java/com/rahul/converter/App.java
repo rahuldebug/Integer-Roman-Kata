@@ -11,5 +11,7 @@ public class App {
     public static void main(String[] args) throws IllegalAccessException {
 //        IntegerCoverter ic= new IntegerCoverter();
 //        System.out.println(ic.getRoman(140).toString());
+        RomanToInt rm=new RomanToInt();
+        System.out.println(rm.romanToInt("I"));
     }
 }
